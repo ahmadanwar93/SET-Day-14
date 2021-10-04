@@ -41,8 +41,8 @@ function callWeatherApi(pos){
 
     
         // asssign value to elements created
-        minTempFutureDayOne.innerHTML = data.daily[1].temp.min.toFixed(1)  + '&deg;C';
-        maxTempFutureDayOne.innerHTML = data.daily[1].temp.max.toFixed(1)  + '&deg;C';
+        minTempFutureDayOne.innerHTML = data.daily[1].temp.min.toFixed(1)- 273.15  + '&deg;C';
+        maxTempFutureDayOne.innerHTML = data.daily[1].temp.max.toFixed(1)- 273.15  + '&deg;C';
         weatherIconFutureDayOne.src = `http://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}.png`;
         weatherFutureDescriptionDayOne.innerHTML = data.daily[1].weather[0].description;
         windSpeedTextFutureDayOne.innerHTML = data.daily[1].wind_speed + "m/s";
@@ -56,8 +56,8 @@ function callWeatherApi(pos){
 
            
         // asssign value to elements created
-        minTempFutureDayTwo.innerHTML = data.daily[2].temp.min.toFixed(1)  + '&deg;C';
-        maxTempFutureDayTwo.innerHTML = data.daily[2].temp.max.toFixed(1)  + '&deg;C';
+        minTempFutureDayTwo.innerHTML = data.daily[2].temp.min.toFixed(1)- 273.15  + '&deg;C';
+        maxTempFutureDayTwo.innerHTML = data.daily[2].temp.max.toFixed(1)- 273.15  + '&deg;C';
         weatherIconFutureDayTwo.src = `http://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}.png`;
         weatherFutureDescriptionDayTwo.innerHTML = data.daily[2].weather[0].description;
         windSpeedTextFutureDayTwo.innerHTML = data.daily[2].wind_speed + "m/s";
@@ -71,8 +71,8 @@ function callWeatherApi(pos){
 
            
         // asssign value to elements created
-        minTempFutureDayThree.innerHTML = data.daily[3].temp.min.toFixed(1)  + '&deg;C';
-        maxTempFutureDayThree.innerHTML = data.daily[3].temp.max.toFixed(1)  + '&deg;C';
+        minTempFutureDayThree.innerHTML = data.daily[3].temp.min.toFixed(1- 273.15)  + '&deg;C';
+        maxTempFutureDayThree.innerHTML = data.daily[3].temp.max.toFixed(1)- 273.15  + '&deg;C';
         weatherIconFutureDayThree.src = `http://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}.png`;
         weatherFutureDescriptionDayThree.innerHTML = data.daily[3].weather[0].description;
         windSpeedTextFutureDayThree.innerHTML = data.daily[3].wind_speed + "m/s";
@@ -86,8 +86,8 @@ function callWeatherApi(pos){
 
            
         // asssign value to elements created
-        minTempFutureDayFour.innerHTML = data.daily[4].temp.min.toFixed(1)  + '&deg;C';
-        maxTempFutureDayFour.innerHTML = data.daily[4].temp.max.toFixed(1)  + '&deg;C';
+        minTempFutureDayFour.innerHTML = data.daily[4].temp.min.toFixed(1)- 273.15  + '&deg;C';
+        maxTempFutureDayFour.innerHTML = data.daily[4].temp.max.toFixed(1) - 273.15 + '&deg;C';
         weatherIconFutureDayFour.src = `http://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}.png`;
         weatherFutureDescriptionDayFour.innerHTML = data.daily[4].weather[0].description;
         windSpeedTextFutureDayFour.innerHTML = data.daily[4].wind_speed + "m/s";
@@ -101,8 +101,8 @@ function callWeatherApi(pos){
 
            
         // asssign value to elements created
-        minTempFutureDayFive.innerHTML = data.daily[5].temp.min.toFixed(1)  + '&deg;C';
-        maxTempFutureDayFive.innerHTML = data.daily[5].temp.max.toFixed(1)  + '&deg;C';
+        minTempFutureDayFive.innerHTML = data.daily[5].temp.min.toFixed(1) - 273.15 + '&deg;C';
+        maxTempFutureDayFive.innerHTML = data.daily[5].temp.max.toFixed(1) - 273.15 + '&deg;C';
         weatherIconFutureDayFive.src = `http://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}.png`;
         weatherFutureDescriptionDayFive.innerHTML = data.daily[5].weather[0].description;
         windSpeedTextFutureDayFive.innerHTML = data.daily[5].wind_speed + "m/s";
